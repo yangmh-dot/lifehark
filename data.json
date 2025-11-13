@@ -1,0 +1,197 @@
+{
+  "common": {
+    "openers": {
+      "clean": [
+        "A simple, satisfying fix.",
+        "Minimal effort. Maximum clean.",
+        "Clean, fast, effective."
+      ],
+      "hype": [
+        "This hack is a game-changer!",
+        "Insane trick you need to try.",
+        "Mind-blowing no-scrub clean."
+      ]
+    },
+    "lingo": [
+      "life hack",
+      "cleaning hack",
+      "genius hack",
+      "next-level trick",
+      "pro tip",
+      "game changer"
+    ],
+    "claims": [
+      "no scrub, no chemicals",
+      "sparkling clean in minutes",
+      "before → after transformation",
+      "effortless deep clean"
+    ],
+    "power": [
+      "Genius",
+      "Next-level",
+      "Pro-grade",
+      "Game-changing"
+    ],
+    "cta_soft": [
+      "Save this for later.",
+      "Try this today.",
+      "Share with a friend who needs this.",
+      "Bookmark for your weekend reset."
+    ],
+    "cta_watch": [
+      "Watch the wipe.",
+      "Don’t blink.",
+      "Wait for it.",
+      "Stay for the after shot."
+    ],
+    "cta_save": [
+      "Save & share.",
+      "Save this hack.",
+      "Share this with your roommate."
+    ]
+  },
+  "categories": {
+    "kitchen": {
+      "label": "microwave lemon-steam",
+      "short": "microwave clean",
+      "material": "lemons + water",
+      "benefit": "No harsh chemicals — just citrus steam",
+      "beats": [
+        "0–3s · Dirty microwave close-up • clinical light",
+        "3–6s · Glass bowl + water + 3 lemon slices — center of turntable",
+        "6–9s · Door clicks • countdown • bowl spins",
+        "9–14s · Steam burst • single wipe = pristine wall",
+        "14–15s · Static gleam • tiny lens flare"
+      ],
+      "tags": [
+        "#CleanTok",
+        "#LifeHack",
+        "#CleaningHacks",
+        "#Satisfying",
+        "#SparklingClean",
+        "#MicrowaveHack",
+        "#NoScrub",
+        "#CitrusHack",
+        "#LemonHack",
+        "#BeforeAndAfter",
+        "#HomeTips",
+        "#KitchenClean",
+        "#NoChemicals",
+        "#SteamClean",
+        "#DeepClean"
+      ],
+      "seo": [
+        "microwave cleaning",
+        "lemon steam hack",
+        "no scrub cleaning",
+        "kitchen deep clean",
+        "oddly satisfying clean",
+        "citrus steam"
+      ],
+      "prompt_en": "(0-3s) Hyper-realistic 8K, 9:16. Cinematic tracking across a dirty microwave interior; clinical light reveals dried tomato splatters, grease, caked-on food. Background: modern minimalist American kitchen (white cabinets, marble countertop). \n(3-6s) Hands with light-pink manicure place a glass bowl with water + three lemon slices on the turntable center. Medium close. \n(6-9s) Door clicks shut. Exterior shot of sleek stainless-steel microwave; digital display counts down; interior light shows bowl spinning. Exactly 3s. \n(9-14s) Door opens; citrus-scented steam billows toward camera. A crisp white paper towel wipes once; grime vanishes revealing bright white wall; oddly satisfying. \n(14-15s) Final static of spotless interior; tiny lens flare. \nOverall: 9:16 vertical, 15s, bright minimalist, hyper-realistic 8K, airy studio lighting, sharp instructional cuts; mood: satisfying, effortless, magical cleaning hack.",
+      "prompt_zh": "（0–3 秒）超寫實 8K，9:16。電影級推軌掃過骯髒微波爐內壁；臨床感燈光顯出乾掉番茄醬、油垢與結塊食物殘渣。背景為現代極簡美式廚房（白櫥櫃、大理石檯面）。\n（3–6 秒）塗淡粉色指甲的手將「清水 + 三片檸檬」玻璃碗放在轉盤中央。中近景。\n（6–9 秒）門輕扣關上；切到外觀；數位面板倒數；內燈照亮旋轉玻璃碗。恰 3 秒。\n（9–14 秒）門一開，檸檬蒸氣撲向鏡頭；一張白紙巾單次擦拭，重污瞬間消失，露出潔白牆面，極度療癒。\n（14–15 秒）最後定格：潔淨內壁與微弱鏡頭光暈。\n整體：9:16 直式、15 秒，明亮極簡，高擬真 8K，通透棚燈，銳利教學剪輯；氛圍：療癒、輕鬆、如魔法般的清潔祕訣。"
+    },
+    "bathroom": {
+      "label": "bathroom mirror descaling",
+      "short": "mirror clean",
+      "material": "vinegar + water + microfiber",
+      "benefit": "Cuts through limescale, streak-free shine",
+      "beats": [
+        "0–3s · Hard water spots on mirror • harsh light reveals scale",
+        "3–6s · Mix 1:1 vinegar & water in spray bottle • microfiber ready",
+        "6–9s · Mist glass evenly • dwell time 30–60s",
+        "9–14s · Single top-to-bottom wipe • streaks vanish • edge polish",
+        "14–15s · Crystal clear reflection • soft glint"
+      ],
+      "tags": [
+        "#BathroomClean",
+        "#MirrorHack",
+        "#LifeHack",
+        "#DeepClean",
+        "#VinegarHack",
+        "#StreakFree",
+        "#Satisfying",
+        "#BeforeAndAfter",
+        "#HomeCare",
+        "#CleanHome",
+        "#NoResidue",
+        "#GlassClean",
+        "#Restoration"
+      ],
+      "seo": [
+        "remove limescale mirror",
+        "vinegar glass cleaning",
+        "streak free mirror hack",
+        "bathroom deep clean",
+        "hard water stains"
+      ],
+      "prompt_en": "(0-3s) 9:16, 8K macro of bathroom mirror covered with hard water spots, harsh overhead light highlighting scale.\n(3-6s) Hand mixes 1:1 white vinegar and water in a clear spray bottle; microfiber cloth ready.\n(6-9s) Even mist across glass; let sit 30–60s; close-up droplets breaking mineral film.\n(9-14s) One slow top-to-bottom wipe; streaks vanish; corners polished with small circular motions; oddly satisfying.\n(14-15s) Final static: crystal clear reflection with a soft glint. Bright minimalist aesthetic.",
+      "prompt_zh": "（0–3 秒）9:16，8K 近拍浴室鏡面佈滿硬水斑；頂光強烈顯示水垢。\n（3–6 秒）手將白醋與清水 1:1 混合於透明噴瓶；備妥超細纖維布。\n（6–9 秒）均勻噴灑鏡面；靜置 30–60 秒；特寫顯示水滴分解礦物膜。\n（9–14 秒）自上而下一次慢擦；條痕消失；邊角小圈拋光；療癒滿點。\n（14–15 秒）最後定格：清澈倒影與柔和高光。明亮極簡風。"
+    },
+    "laundry": {
+      "label": "laundry vinegar softening",
+      "short": "laundry freshen",
+      "material": "white vinegar (no scent)",
+      "benefit": "Softens fabric, neutralizes odors, no residue",
+      "beats": [
+        "0–3s · Pile of dull towels • muted light",
+        "3–6s · Add 1/2 cup white vinegar to fabric softener slot",
+        "6–9s · Machine starts • gentle swish • close-up bubbles",
+        "9–14s · Remove towels • fluff test • smell check smile",
+        "14–15s · Stack of bright, fluffy towels"
+      ],
+      "tags": [
+        "#LaundryHack",
+        "#LifeHack",
+        "#VinegarHack",
+        "#FreshLaundry",
+        "#NoResidue",
+        "#EcoClean",
+        "#HomeTips",
+        "#BeforeAndAfter",
+        "#SoftTowels",
+        "#Deodorize"
+      ],
+      "seo": [
+        "vinegar laundry softener",
+        "remove smells laundry",
+        "eco friendly laundry hack",
+        "fluffy towels hack"
+      ],
+      "prompt_en": "(0-3s) 9:16, 8K, stack of dull towels; flat light.\n(3-6s) Close-up: pour 1/2 cup white vinegar (unscented) into softener compartment.\n(6-9s) Start cycle; slow macro of water and detergent swirling.\n(9-14s) Pull out towels; fluff test and satisfied inhale; visible brightness improvement.\n(14-15s) Final static: neatly stacked fluffy towels. Minimalist, bright aesthetic.",
+      "prompt_zh": "（0–3 秒）9:16、8K；一疊黯淡毛巾；平光。\n（3–6 秒）近拍：倒入 1/2 杯無香白醋於柔軟精槽。\n（6–9 秒）啟動行程；微距拍攝水流與清潔劑旋動。\n（9–14 秒）取出毛巾；蓬鬆測試與嗅聞滿足表情；亮度提升可見。\n（14–15 秒）最後定格：整齊疊好的蓬鬆毛巾。極簡明亮風格。"
+    },
+    "car": {
+      "label": "car vent deodorize (baking soda)",
+      "short": "car freshen",
+      "material": "baking soda + cabin filter access",
+      "benefit": "Neutralizes odors at the source, quick fresh cabin",
+      "beats": [
+        "0–3s · POV car interior • stale-air vibe",
+        "3–6s · Access cabin filter area • small sachet of baking soda",
+        "6–9s · Sprinkle lightly / insert sachet near intake",
+        "9–14s · AC on recirculate • air particles animation • smile",
+        "14–15s · Clean, crisp interior shot"
+      ],
+      "tags": [
+        "#CarHack",
+        "#Detailing",
+        "#LifeHack",
+        "#FreshCabin",
+        "#DIYDetail",
+        "#BakingSoda",
+        "#OdorNeutralizer",
+        "#BeforeAndAfter",
+        "#CarCare"
+      ],
+      "seo": [
+        "remove car smell baking soda",
+        "DIY car vent deodorize",
+        "cabin filter odor neutralize",
+        "quick detailing hack"
+      ],
+      "prompt_en": "(0-3s) 9:16, 8K, car interior feeling stale.\n(3-6s) Open cabin filter access; show a small breathable sachet of baking soda.\n(6-9s) Insert sachet near intake or lightly sprinkle (demonstration only).\n(9-14s) AC on recirculate; visual cue of cleaner airflow; driver smiles.\n(14-15s) Final static: fresh, tidy dashboard shot. Bright minimalist grade.",
+      "prompt_zh": "（0–3 秒）9:16、8K；車內陳舊氣味的氛圍感。\n（3–6 秒）打開冷氣濾網位置；展示一小包可透氣的小蘇打粉包。\n（6–9 秒）將小包置於進氣處附近或示範少量灑放（示意）。\n（9–14 秒）開啟內循環；以視覺提示乾淨氣流；駕駛露出滿意表情。\n（14–15 秒）最後定格：車內乾淨清爽的儀表台。明亮極簡色調。"
+    }
+  }
+}

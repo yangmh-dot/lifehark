@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Life Hack Copy Kit v2 — Multi-Category</title>
+  <meta name="description" content="Generate hooks, captions, hashtags, and polished prompts for US life-hack shorts. Multi-category, A/B output, platform limits."/>
+  <style>
+    :root{
+      --bg:#f7fafc;
+      --text:#0b1220;
+      --muted:#5b7087;
+      --card:#ffffff;
+      --border:#e5e7eb;
+      --accent:#2563eb;
+      --ok:#059669;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial}
+    header{position:sticky;top:0;background:#ffffffcc;backdrop-filter:blur(8px);border-bottom:1px solid var(--border);z-index:10}
+    .wrap{max-width:1100px;margin:0 auto;padding:18px}
+    h1{margin:6px 0 4px;font-weight:800;letter-spacing:.2px}
+    .sub{color:var(--muted);margin:0 0 12px}
+    .toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 16px}
+    .toolbar select,.toolbar button{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 12px;color:var(--text);cursor:pointer}
+    .toolbar button.primary{background:var(--accent);color:#fff;border-color:transparent;font-weight:700}
+    .toolbar .pill{background:#f1f5f9;border:1px solid var(--border);border-radius:999px;padding:6px 10px;color:#334155}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:0 8px 30px #0b122010;display:flex;flex-direction:column}
+    .card header{all:unset;display:flex;gap:10px;align-items:center;padding:14px 14px 0}
+    .card h2{font-size:16px;margin:0}
+    .card .content{padding:12px 14px 16px}
+    textarea{width:100%;min-height:240px;resize:vertical;background:#f8fafc;border:1px solid var(--border);color:var(--text);border-radius:12px;padding:10px;outline:none}
+    .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px}
+    .copy{background:#f8fafc;border:1px solid var(--border);padding:8px 10px;border-radius:10px;color:var(--text);cursor:pointer}
+    .copy.ok{border-color:#86efac;background:#ecfdf5;color:#065f46}
+    footer{color:var(--muted);text-align:center;padding:18px 0 28px}
+    .note{font-size:12px;color:var(--muted)}
+    .badge{background:#eef2ff;border:1px solid var(--border);color:#1e293b;border-radius:999px;padding:6px 10px}
+    .success{color:var(--ok);font-weight:700;margin-left:6px;display:none}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    .tiny{font-size:12px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Life Hack Copy Kit v2 <span class="badge">Multi-Category • A/B • Platform Limits</span></h1>
+      <p class="sub">Hooks & titles • Captions & beats • Hashtags & EN/中文 prompts — tailored for US audience and each platform.</p>
+      <div class="toolbar">
+        <select id="category" title="Category">
+          <option value="kitchen">Kitchen</option>
+          <option value="bathroom">Bathroom</option>
+          <option value="laundry">Laundry</option>
+          <option value="car">Car</option>
+        </select>
+        <select id="platform" title="Platform">
+          <option value="shorts">YouTube Shorts</option>
+          <option value="reels">Instagram Reels</option>
+          <option value="tiktok">TikTok</option>
+        </select>
+        <select id="aud" title="Audience">
+          <option value="genz">US Gen-Z</option>
+          <option value="adult">US 20-40 Adult</option>
+          <option value="broad">Broad Family-safe</option>
+        </select>
+        <button id="btnRandom" class="primary">🎲 Random All</button>
+        <button id="btnAB">🅰️/🅱️ Generate A/B</button>
+        <button id="btnCopyAll">📋 Copy All</button>
+        <span class="pill">9:16 • 15s • zero-backend</span>
+      </div>
+      <div class="tiny">Platform limits auto-applied: caption length & max hashtags (TikTok ≤ 2200 chars; IG ≤ 30 tags; Shorts ≤ 1000 chars by default).</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="grid">
+      <section class="card" id="col1">
+        <header><h2>① Hooks & Titles</h2></header>
+        <div class="content">
+          <textarea id="hooks"></textarea>
+          <div class="row">
+            <button class="copy" data-target="hooks">Copy</button>
+            <span class="pill">US slang • life-hack lingo</span>
+            <span id="ok1" class="success">✓ Copied</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="col2">
+        <header><h2>② Captions & Subtitles (0–15s Beats)</h2></header>
+        <div class="content">
+          <textarea id="captions"></textarea>
+          <div class="row">
+            <button class="copy" data-target="captions">Copy</button>
+            <span class="pill">Oddly satisfying • Before/After</span>
+            <span id="ok2" class="success">✓ Copied</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="col3">
+        <header><h2>③ Hashtags, SEO, + Prompts (EN/中文)</h2></header>
+        <div class="content">
+          <textarea id="tags"></textarea>
+          <div class="row">
+            <button class="copy" data-target="tags">Copy</button>
+            <span class="pill">Platform-optimized tags</span>
+            <span id="ok3" class="success">✓ Copied</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <p class="note" style="margin-top:18px;">Tip: Choose category & platform, hit <b>Random All</b> or <b>🅰️/🅱️</b>, then copy each column or Copy All (sections separated by <code>---</code>).</p>
+  </main>
+
+  <footer>
+    Light theme • High-retention copy kit • v2.0
+  </footer>
+
+<script>
+async function loadData(){ 
+  const res = await fetch('./assets/data.json');
+  return await res.json();
+}
+
+function pick(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
+
+const platformRules = {
+  tiktok: { captionMax: 2200, hashtagMax: 30 },
+  reels:  { captionMax: 2200, hashtagMax: 30 },
+  shorts: { captionMax: 1000, hashtagMax: 20 }
+};
+
+function clampText(text, max){
+  if(text.length <= max) return text;
+  return text.slice(0, max-10) + '…';
+}
+
+function limitHashtags(tags, max){
+  return tags.slice(0, max);
+}
+
+function buildHooks(d, cat){
+  const base = d.common;
+  const c = d.categories[cat];
+  function one(style){
+    const opener = pick(base.openers[style]);
+    const lingo = pick(base.lingo);
+    const claim = pick(base.claims);
+    return [
+      `1. ${opener} ${lingo} — ${claim}`,
+      `2. ${pick(base.power)} ${c.label} hack. ${pick(base.cta_watch)}`,
+      `3. You’ve been doing your ${c.short} *wrong*. ${pick(base.cta_soft)}`,
+      `4. No chemicals, no scrubbing — just ${c.material}.`,
+      `5. The 15-second ${pick(base.power)} trick. Watch the wipe.`
+    ].join("\n");
+  }
+  return {A: one('clean'), B: one('hype')};
+}
+
+function buildCaptions(d, cat){
+  const c = d.categories[cat];
+  const beats = c.beats;
+  const lines = [
+    `So satisfying. ${pick(d.common.cta_watch)}`,
+    `Like magic, minimal effort.`,
+    `${c.benefit}.`,
+    `Before ➜ After. ${pick(d.common.cta_save)}`,
+    `Try this today and thank me later.`
+  ];
+  return ["Beats:", ...beats, "", "On-screen text ideas:", ...lines].join("\n");
+}
+
+function buildTagsAndPrompt(d, cat, platform){
+  const c = d.categories[cat];
+  const rules = platformRules[platform];
+  const tags = limitHashtags(c.tags, rules.hashtagMax);
+  const seo = c.seo;
+  const prompt = c.prompt_en.trim();
+  const zh = c.prompt_zh.trim();
+  return [
+`Hashtags (${tags.length}/${rules.hashtagMax}):
+${tags.join(" ")}
+
+SEO keywords:
+${seo.join(", ")}
+
+Prompt (EN, 9:16 · 15s):
+${prompt}
+
+中文製作提示（9:16 · 15 秒）:
+${zh}`].join("\n\n");
+}
+
+function renderSingle(d, cat, platform){
+  const H = buildHooks(d, cat);
+  document.getElementById('hooks').value = H.A;
+  document.getElementById('captions').value = buildCaptions(d, cat);
+  const t = buildTagsAndPrompt(d, cat, platform);
+  document.getElementById('tags').value = t;
+}
+
+function renderAB(d, cat, platform){
+  const H = buildHooks(d, cat);
+  const hooksAB = ["— A (Clean & Minimal) —", H.A, "", "— B (Hype / Viral) —", H.B].join("\n");
+  document.getElementById('hooks').value = hooksAB;
+  const cap = buildCaptions(d, cat);
+  document.getElementById('captions').value = cap;
+  const t = buildTagsAndPrompt(d, cat, platform);
+  document.getElementById('tags').value = t;
+}
+
+function markup(btn, okId){
+  btn.classList.add('ok');
+  document.getElementById(okId).style.display='inline';
+  setTimeout(()=>{
+    btn.classList.remove('ok');
+    document.getElementById(okId).style.display='none';
+  },1200);
+}
+
+(async ()=>{
+  const d = await loadData();
+  const catSel = document.getElementById('category');
+  const platSel = document.getElementById('platform');
+
+  function refresh(){ renderSingle(d, catSel.value, platSel.value); }
+  document.getElementById('btnRandom').addEventListener('click', refresh);
+  document.getElementById('btnAB').addEventListener('click', ()=>renderAB(d, catSel.value, platSel.value));
+
+  document.getElementById('btnCopyAll').addEventListener('click', async ()=>{
+    const plat = platSel.value;
+    const rules = platformRules[plat];
+    const hooks = document.getElementById('hooks').value;
+    const captions = clampText(document.getElementById('captions').value, rules.captionMax);
+    const tags = document.getElementById('tags').value;
+    const all = [hooks, captions, tags].join("\n\n---\n\n");
+    await navigator.clipboard.writeText(all);
+    markup(document.getElementById('btnCopyAll'), 'ok1');
+  });
+
+  document.querySelectorAll('.copy').forEach((b,i)=>{
+    b.addEventListener('click', async ()=>{
+      const id = b.getAttribute('data-target');
+      const plat = document.getElementById('platform').value;
+      const rules = platformRules[plat];
+      let val = document.getElementById(id).value;
+      if(id==='captions') val = clampText(val, rules.captionMax);
+      await navigator.clipboard.writeText(val);
+      markup(b, 'ok'+(i+1));
+    });
+  });
+
+  catSel.addEventListener('change', refresh);
+  platSel.addEventListener('change', refresh);
+
+  refresh();
+})();
+</script>
+</body>
+</html>
